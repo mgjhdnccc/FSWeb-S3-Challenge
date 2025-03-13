@@ -66,8 +66,37 @@ h1, h2, h3, h4, h5, h6, p, a, i {
     text-decoration: none;
 }
 
-h1 {
+h1 { 
+    background-color: rgba(0, 0, 0, 0.5); /* Soluk siyah, %50 şeffaflık */
+    color: white; /* Yazı rengi beyaz */
+    padding: 20px; /* İçeriği çevreleyen boşluk, tüm satırı kapsar */
+    text-align: center; /* Metni ortalamak için */
+}
+
+h1 a {
+    color: white;
     font-size: 7.5rem;
+}
+
+ul {
+    display: flex;
+    gap: 230px; /* Öğeler arasına 15px boşluk ekler */
+    margin-bottom: 10px; /* Alt boşluğu artır */
+    padding: 50px;
+    list-style: none;
+}
+
+ul a {
+    color: white; /* Bağlantı rengini beyaz yapar */
+    background-color: rgba(0, 0, 0, 0.5);
+    text-decoration: none; /* Bağlantının altını çizen çizgiyi kaldırır (isteğe bağlı) */
+}
+
+.social-links a i {
+    color: white; /* FontAwesome simgelerinin rengini beyaz yapar */
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-right: 80px; /* Her bağlantı arasına 20px boşluk ekler */
+    font-size: 40px; /* İkon boyutu büyütüldü */
 }
 
 h2 {
@@ -87,30 +116,25 @@ p, a {
 }
 
 /* header section */
-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
+header{
     width: 100%;
     height: 100vh;
     background-image: url('../img/menu-header.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
-header nav div {
+    color:rgb(225, 239, 230);
+    /*
+    background:rgb(0, 4, 17) ;
+    background-color:rgba(0, 4, 17, 0.801); 
+    */
     display: flex;
-    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Header içeriğini ortalamak için */
+    align-items: flex-start; /* Öğeleri üst kısma hizalar */
 }
-header nav a {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    
-}
+
 
 /* spacer */
 .spacer {
@@ -131,6 +155,7 @@ header nav a {
     height: auto;
     background-image: url('../img/staff-bartender.jpg');
     background-color: rgb(0, 4, 17);
+    color: white;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -139,21 +164,42 @@ header nav a {
 /* footer section */
 footer {
     width: 100%;
-    /* height: 15vh; */
-    padding-top: 2.5vh;
+    height: 15vh;
+    padding-top: 2.5vh + 20px;
     font-size: 3rem;
+    color:rgb(225, 239, 230);
+    background:rgb(0, 4, 17) ;
+    background-color:rgb(0, 4, 17) ;
+}
+
+footer div {
+    margin-left: 20px; /* Soldan boşluk bırakır */
+}
+
+footer a{
+    color: white;
+}
+
+footer input,
+footer button {
+    font-size: 18px; /* Yazıları büyütür */
+    padding: 10px 15px; /* Buton ve input'un iç dolgularını büyütür */
+    border-radius: 5px; /* Köşeleri biraz yuvarlatır */
+}
+
+footer nav{
     display: flex;
-    justify-content: center;
-    background-color: red;
+    justify-content: flex-end; /* Tüm içeriği sağa hizalar */
+    padding-right: 80px; /* Sağ iç boşluk bırakır ve arka planı korur */
+    gap: 230px; /* Linkler arasına boşluk bırakır */
 }
 
-footer .join-us{
-    width: 30%;
-
-}
-footer .footer-right{
-    width: 60%;
-    background-color: aqua;
+footer p {
+    font-size: 15px; /* Yazıyı küçültür */
+    display: flex;
+    justify-content: flex-end; /* En sağa hizalar */
+    padding-right: 100px; /* Sağ iç boşluk bırakır ve arka planı korur */
+    background-color:rgb(0, 4, 17) ;
 }
 
 /* mobile media query */

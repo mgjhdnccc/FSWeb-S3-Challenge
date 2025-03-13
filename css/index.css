@@ -39,7 +39,7 @@ h1 a {
 
 ul {
     display: flex;
-    gap: 150px; /* Öğeler arasına 15px boşluk ekler */
+    gap: 230px; /* Öğeler arasına 15px boşluk ekler */
     margin-bottom: 10px; /* Alt boşluğu artır */
     padding: 50px;
     list-style: none;
@@ -56,7 +56,8 @@ ul a {
 .social-links a i {
     color: white; /* FontAwesome simgelerinin rengini beyaz yapar */
     background-color: rgba(0, 0, 0, 0.5);
-    margin-right: 20px; /* Her bağlantı arasına 20px boşluk ekler */
+    margin-right: 80px; /* Her bağlantı arasına 20px boşluk ekler */
+    font-size: 40px; /* İkon boyutu büyütüldü */
 }
 
 blockquote, q {
